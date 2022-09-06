@@ -178,6 +178,8 @@ public class Tugas {
                 
                     String lagi;
                     System.out.println("---------------------------------");
+                    boolean b=true;
+                    while(b==true){
                     System.out.println("Apakah ingin memesan lagi?\n"
                             + "Ya / Tidak");
                     lagi = input.next();
@@ -185,10 +187,11 @@ public class Tugas {
                         System.out.println("Pesan lagi!");
                     }else if(lagi.equals("Tidak")){
                         System.out.println("Terimakasih telah memesan tiket :D");
-                        again = false;
+                        System.exit(0);
                     }else {
                         System.out.println(lagi+" tidak ada dalam pilihan!");
                     }
+                }
         }
     }
 }
